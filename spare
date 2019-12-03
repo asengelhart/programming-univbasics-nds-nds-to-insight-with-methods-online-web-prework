@@ -1,0 +1,18 @@
+  result = {}
+  row = 0 
+  director_len = nds.length 
+  while row < director_len do 
+    director_name = nds[row][:name]
+    result[director_name] = gross_for_director(director_name)
+    row += 1
+  end 
+  result 
+  
+    movie_row = 0 
+  movie_len = director_data[:movies].length
+  gross = 0 
+  while movie_row < movie_len do 
+    gross += director_data[:movies][movie_row][:worldwide_gross]
+    movie_row += 1 
+  end 
+  gross 
