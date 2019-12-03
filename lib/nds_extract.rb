@@ -15,6 +15,8 @@ def directors_totals(nds)
     result[director_name] = gross_for_director(director_name)
     row += 1
   end 
+  require 'pp'
+  pp result
   result 
 end
 
