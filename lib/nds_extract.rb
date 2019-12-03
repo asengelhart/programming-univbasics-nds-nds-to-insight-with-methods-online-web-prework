@@ -31,4 +31,4 @@ def gross_for_director(director_data)
   gross 
 end
 
-puts directors_totals(directors_database)
+puts directors_database
